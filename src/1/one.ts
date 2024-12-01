@@ -1,5 +1,5 @@
 if (import.meta.main) {
-    const data = await Deno.readTextFile("data.txt");
+    const data = await Deno.readTextFile("./src/1/data.txt");
 
     // split data file into left and right arrays
     const lines = data.trim().split("\n"); 
@@ -27,6 +27,6 @@ if (import.meta.main) {
         distance += Math.abs(leftArray[i] - rightArray[i]);
     }
     
-    // spit out the naswer
+    // spit out the answer
     console.log("answer:", distance);
 }

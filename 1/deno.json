@@ -1,9 +1,0 @@
-{
-  "tasks": {
-    "one": "deno run one.ts",
-    "two": "deno run two.ts"
-  },
-  "imports": {
-    "@std/assert": "jsr:@std/assert@1"
-  }
-}

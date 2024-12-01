@@ -1,5 +1,5 @@
 ## 🎄🌟 AoC *(Advent of Code)*
-Hey there! Here are all my solutions to Advent of Code, feel free to take a look!
+Hey there! Here are all my solutions to Advent of Code, feel free to open the **src** directory and take a look!
 
 Everything here is written using **TypeScript** with the help of **Deno**!
 

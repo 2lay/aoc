@@ -1,5 +1,5 @@
 if (import.meta.main) {
-    const data = await Deno.readTextFile("data.txt");
+    const data = await Deno.readTextFile("./src/1/data.txt");
 
     // split data file into left and right arrays
     const lines = data.trim().split("\n"); 
@@ -29,6 +29,7 @@ if (import.meta.main) {
         const freq = frequency.get(leftNum) || 0;
         similarityScore += leftNum * freq;
     }
-    
+
+    // spit out the answer
     console.log("answer:", similarityScore);
 }
