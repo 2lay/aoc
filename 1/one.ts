@@ -3,16 +3,16 @@ if (import.meta.main) {
 
     // split data file into left and right arrays
     const lines = data.trim().split("\n"); 
-    const leftArray = [];
-    const rightArray = [];
+    const leftArray: number[] = [];
+    const rightArray: number[] = [];
 
     // parse left numbers to left and right ro right
     for (const line of lines) {
         const parts = line.split(/\s+/);
-        const leftNum = Number(parts[0]);
-        const rightNum = Number(parts[1]);
-        leftArray.push(leftNum);
-        rightArray.push(rightNum);
+        const leftNum = parseInt(parts[0]);
+        const rightNum = parseInt(parts[1]);
+        (leftArray as number[]).push(leftNum);
+        (rightArray as number[]).push(rightNum);
     }
 
     // sort both arrays (thank god i don't have to write bubblesort, i <3 ecmascript)
@@ -30,8 +30,3 @@ if (import.meta.main) {
     // spit out the naswer
     console.log("answer:", distance);
 }
-
-
-
-
-
